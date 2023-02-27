@@ -1,0 +1,230 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    text-decoration: none;
+}
+.container{
+    width:1200px;
+    margin: 0 auto;
+}
+.main{
+    height: 815px;
+    background-image: url(../img/mainBG.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: bottom;
+}
+.header
+{
+    padding: 50px 0 0 0 ;
+}
+.header_common_block
+{
+    display: flex;
+    justify-content: space-between;
+}
+.header_left_part
+{
+    display: flex;
+    width: 619px;
+    justify-content: space-between;
+    align-items: center;
+}
+.logoCompany
+{
+    width: 184px;
+    height: 40px;
+}
+.nav
+{
+    display: flex;
+    gap:36px;
+}
+.navItem
+{
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+    color: #8794BA;
+    flex: none;
+    order: 2;
+    flex-grow: 0;
+    cursor: pointer;
+    transition: transform 0.8s;
+}  
+.navItem:hover{
+    color:#EF2A82;
+    transform: scale(1.2);
+}  
+
+.header_right_part
+{
+    width: 322px;
+    display: flex;
+    gap:40px;
+}
+.header_right_part_button
+{
+    background: none;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+    color: #8794BA;
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+    border: none; 
+    transition: transform 0.8s;
+    cursor: pointer;
+}  
+.header_right_part_button:hover{
+    color:#EF2A82;
+    transform: scale(1.2);
+}
+.header_right_part_button.special
+{
+    border: 1px solid #465B95;
+    border-radius: 68px;
+    padding: 10px 53px;
+    transition: transform 0.8s;
+}
+.header_right_part_button.special:hover
+{
+    background:#EF2A82;
+    color:black;
+    transform: scale(1.2);
+}      
+.menu_block
+{
+    display: none;
+}
+
+
+@media(max-width:376px)
+{
+     
+
+    .main{
+        background-image: url(../img/mainBGMobile.png);
+    }
+    .container{
+        width: 335px;
+    }
+    .header
+    {
+        padding: 20px 0 0 0 ;
+    }   
+    .logoCompany
+    {
+        width: 138px;
+        height: 30px;
+    }
+    .header_common_block
+    {
+        display: flex;
+        justify-content: space-between;
+        position: relative;
+    }
+    .nav
+    {
+        display: none;
+    }
+    .header_right_part_button.special
+    {
+            display: none;
+    }
+    .menu_block{
+        display: flex;
+        position: absolute;
+        right: 0px;
+        top:100%;
+    }
+    .menu_block_ul
+    {
+        display: flex;
+        flex-direction: column;
+        padding:  0 10px;
+        background-color: white;
+        text-align: center;
+        align-items: center;  
+        color: #8794BA;
+        cursor: pointer;
+
+    }
+    .menu_block_li
+    {
+        width: 100%;
+        padding: 10px;
+        text-decoration: none;
+        list-style: none;
+    }
+    .menu_block_li:hover 
+    {
+        background:#EF2A82;
+        color:black;
+    }
+
+
+    .navItem
+    {
+        font-family: 'Roboto';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 19px;
+        color: #8794BA;
+        flex: none;
+        order: 2;
+        flex-grow: 0;
+        cursor: pointer;
+        transition: transform 0.8s;
+    }  
+    .navItem:hover{
+        color:#EF2A82;
+        transform: scale(1.2);
+    }  
+    
+    .header_right_part
+    {
+        width: 322px;
+        display: flex;
+        gap:40px;
+    }
+    .header_right_part_button
+    {
+        background: none;
+        font-family: 'Roboto';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 19px;
+        color: #8794BA;
+        flex: none;
+        order: 0;
+        flex-grow: 0;
+        border: none; 
+        transition: transform 0.8s;
+        cursor: pointer;
+    }  
+    .header_right_part_button:hover{
+        color:#EF2A82;
+        transform: scale(1.2);
+    }
+    .header_right_part_button.special
+    {
+        border: 1px solid #465B95;
+        border-radius: 68px;
+        padding: 10px 53px;
+        transition: transform 0.8s;
+    }
+    .header_right_part_button.special:hover
+    {
+        background:#EF2A82;
+        color:black;
+        transform: scale(1.2);
+    } 
+} 

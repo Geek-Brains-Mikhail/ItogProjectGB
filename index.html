@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="/fonts/fonts.css">
+</head>
+<body>
+    <main class="main">
+        <header class="header">
+            <div class="container">
+                <div class="header_common_block">
+                    <div class="header_left_part">
+                        <a href="#" class="linkMainPage"><img src="/img/logo.png" alt="Логотип компании" class="logoCompany"></a>
+                        <nav class="nav">
+                            <a href="#" class="navItem">Products</a>
+                            <a href="#" class="navItem">Pricing</a>
+                            <a href="#" class="navItem">FAQ</a>
+                            <a href="#" class="navItem">Blog</a>
+                            <a href="#" class="navItem">Blog</a>
+                        </nav>
+                    </div>
+                    <div class="header_right_part">
+                        <button class="header_right_part_button">Sign In</button>
+                        <button class="header_right_part_button special">Sign Up</button>
+                    </div>
+                    <img src="/img/burgerMenu.png" alt="Icon_picture" style="cursor: pointer;" onClick="start();">   
+                    <script>
+                        function start() {
+                            if(window.getComputedStyle(menu_items, null).display == 'none')
+                            {
+                                document.getElementById('menu_items').setAttribute('style', 'display: block');
+                            }
+                            else{
+                                document.getElementById('menu_items').setAttribute('style', 'display: none');
+                            }
+                            
+                        };
+                    </script>
+                    <div class="menu_block" id="menu_items">
+                        <ul class="menu_block_ul">
+                            <li class="menu_block_li">Products</li>
+                            <li class="menu_block_li">Pricing</li>
+                            <li class="menu_block_li">FAQ</li>
+                            <li class="menu_block_li">Blog</li>
+                            <li class="menu_block_li">Blog</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </header>
+    </main>
+</body>
+</html>
